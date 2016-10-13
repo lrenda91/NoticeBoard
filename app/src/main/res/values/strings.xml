@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">NoticeBoard</string>
+    <string name="clear"></string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_student_profile">Student</string>
+
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="availability">Available from</string>
+
+    <string name="browse">Browse offers</string>
+    <string name="on_list">on a List</string>
+    <string name="on_map">on a Map</string>
+    <string name="student">Student</string>
+    <string name="homeowner">Advertiser</string>
+    <string name="signup">Sign Up</string>
+    <string name="signup_student">Sign up as Student</string>
+    <string name="signup_advertiser">Sign up as Advertiser</string>
+    <string name="login">Log In</string>
+    <string name="title_activity_offers_browse">Browse offers</string>
+    <string name="title_activity_advanced_search">Search for offers</string>
+    <string name="title_activity_homeowner_profile">Advertiser</string>
+    <string name="title_activity_add_notice">Add new Notice</string>
+
+    <string name="unspecified">Unspecified</string>
+
+    <string name="my_info">My informations</string>
+    <string name="my_notices">My notices</string>
+
+    <string name="rent">Rent</string>
+    <string name="sale">Sale</string>
+
+    <string name="studio">Studio flat</string>
+    <string name="apartment">Apartment</string>
+    <string name="loft">Loft</string>
+    <string name="attic">Attic</string>
+
+    <string name="date">Date</string>
+    <string name="sizem2">Size</string>
+    <string name="price">Price</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="search_by_tag">Search by tag: </string>
+    <string name="list_search_hint">Search by title</string>
+    <string name="map_search_hint">Search near address</string>
+    <string name="title_activity_notice_details">NoticeDetailsActivity</string>
+
+    <string name="your_complete_name">Complete name</string>
+    <string name="your_mail">Your e-mail</string>
+    <string name="mail">E-mail</string>
+    <string name="details">Further details</string>
+    <string name="phone">Phone number</string>
+
+    <string name="problem_fraud">Fraud</string>
+    <string name="problem_already_sold">Already sold</string>
+    <string name="problem_wrong_data">Wrong informations</string>
+    <string name="problem_doublet">Doublet</string>
+
+    <string name="add">New</string>
+    <string name="remove">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="complete_name">Complete name</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+
+    <string name="username">Username</string>
+    <string name="passwd">Password</string>
+
+    <string name="euros">euros</string>
+    <string name="within">Search within (Km): </string>
+
+    <string name="cost">Cost</string>
+    <string name="location">Location</string>
+    <string name="property_type">Type of property</string>
+    <string name="contract_type">Type of contract</string>
+
+    <string name="flag_confirm">Flag notice</string>
+    <string name="flag_reason">Reason for flagging notice</string>
+
+    <string name="no_connection">No network is available\nPlease connect your device</string>
+
+</resources>

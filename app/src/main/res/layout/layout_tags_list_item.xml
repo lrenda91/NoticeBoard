@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:padding="3dp">
+
+
+
+    <TextView
+        android:id="@+id/tag_value"
+        android:textStyle="bold"
+        android:textColor="@color/background_material_dark"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="0dp"
+        android:layout_weight="9"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/cancel_tag"
+        android:background="@drawable/ic_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

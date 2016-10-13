@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginBottom="5dp"
+        android:text="@string/browse"/>
+
+    <LinearLayout
+        android:id="@+id/user_controls"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/student_choice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:scaleType="fitCenter"
+                android:background="@color/accent_material_light"
+                android:src="@drawable/ic_list"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/advertiser_choice_layout"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:background="@color/abc_search_url_text_normal"
+                android:src="@drawable/ic_map_place"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="10">
+
+        <!--<AutoCompleteTextView
+            android:id="@+id/simple_search_edit_text"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="wrap_content"
+            android:textSize="15sp" />-->
+
+        <ViewSwitcher
+            android:id="@+id/simple_search_container"
+            android:layout_width="0dp"
+            android:layout_weight="8"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+
+                <AutoCompleteTextView
+                    android:id="@+id/list_simple_search"
+                    android:layout_width="0dp"
+                    android:layout_weight="9"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/sort_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:enabled="false"
+                    android:background="@drawable/ic_sort"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/map_simple_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:textSize="15sp" />
+
+
+        </ViewSwitcher>
+
+        <Button
+            android:id="@+id/simple_search_button"
+            android:enabled="false"
+            android:background="@drawable/ic_done_black"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

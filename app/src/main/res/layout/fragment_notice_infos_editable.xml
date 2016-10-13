@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ViewSwitcher
+        android:id="@+id/title_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/title_layout"
+            layout="@layout/layout_notice_basic_info_item" />
+        <LinearLayout
+            android:id="@+id/title_layout_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/title_name"
+                android:text="@string/title"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:layout_marginRight="10dp"/>
+            <EditText
+                android:id="@+id/title_editable"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="start|center"/>
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <ViewSwitcher
+        android:id="@+id/description_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/description_layout"
+            layout="@layout/layout_notice_basic_info_item" />
+        <LinearLayout
+            android:id="@+id/description_layout_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="4">
+            <TextView
+                android:id="@+id/description_name"
+                android:text="@string/description"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:layout_marginRight="10dp"/>
+            <EditText
+                android:id="@+id/description_editable"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:gravity="start|center"/>
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <ViewSwitcher
+        android:id="@+id/cost_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/cost_layout"
+            layout="@layout/layout_notice_basic_info_item" />
+        <LinearLayout
+            android:id="@+id/cost_layout_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="6">
+            <TextView
+                android:id="@+id/cost_name"
+                android:text="@string/cost"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:layout_marginRight="10dp"/>
+            <SeekBar
+                android:id="@+id/cost_editable"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:max="2000"
+                android:layout_height="match_parent"
+                android:gravity="start|center"/>
+            <TextView
+                android:id="@+id/cost_value"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <ViewSwitcher
+        android:id="@+id/location_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/location_layout"
+            layout="@layout/layout_notice_basic_info_item" />
+        <LinearLayout
+            android:id="@+id/location_layout_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/location_name"
+                android:text="@string/location"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:layout_marginRight="10dp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/location_editable"
+                android:textSize="15sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <ViewSwitcher
+        android:id="@+id/type_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/type_layout"
+            layout="@layout/layout_notice_basic_info_item" />
+        <LinearLayout
+            android:id="@+id/type_layout_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/type_name"
+                android:text="@string/property_type"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:layout_marginRight="10dp"/>
+            <Spinner
+                android:id="@+id/type_editable"
+                android:entries="@array/property_types"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="start|center"/>
+        </LinearLayout>
+    </ViewSwitcher>
+
+    <ViewSwitcher
+        android:id="@+id/contract_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include
+            android:id="@+id/contract_layout"
+            layout="@layout/layout_notice_basic_info_item" />
+        <LinearLayout
+            android:id="@+id/contract_layout_editable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="10dp"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/contract_name"
+                android:text="@string/contract_type"
+                android:textSize="15dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:gravity="start|center"
+                android:layout_marginRight="10dp"/>
+            <Spinner
+                android:id="@+id/contract_editable"
+                android:entries="@array/contract_types"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="start|center"/>
+        </LinearLayout>
+    </ViewSwitcher>
+
+</LinearLayout>

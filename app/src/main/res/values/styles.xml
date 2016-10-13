@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="NotificationText" parent="android:TextAppearance.StatusBar.EventContent" />
+    <style name="NotificationTitle" parent="android:TextAppearance.StatusBar.EventContent.Title" />
+
+    <style name="StudentStyle" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/Student.ActionBar</item>
+        <item name="actionBarStyle">@style/Student.ActionBar</item>
+    </style>
+
+    <style name="AdvertiserStyle" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/Advertiser.ActionBar</item>
+        <item name="actionBarStyle">@style/Advertiser.ActionBar</item>
+    </style>
+
+    <style name="Student.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/student_color</item>
+        <item name="background">@color/student_color</item>
+    </style>
+
+    <style name="Advertiser.ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/advertiser_color</item>
+        <item name="background">@color/advertiser_color</item>
+    </style>
+
+</resources>

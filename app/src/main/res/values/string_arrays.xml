@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="contract_types">
+        <item>@string/unspecified</item>
+        <item>@string/rent</item>
+        <item>@string/sale</item>
+    </string-array>
+
+    <string-array name="property_types">
+        <item>@string/unspecified</item>
+        <item>@string/studio</item>
+        <item>@string/apartment</item>
+        <item>@string/loft</item>
+        <item>@string/attic</item>
+    </string-array>
+
+    <string-array name="notices_sorting_criteria">
+        <item>@string/date</item>
+        <item>@string/sizem2</item>
+        <item>@string/price</item>
+    </string-array>
+
+    <string-array name="problems">
+        <item>@string/problem_fraud</item>
+        <item>@string/problem_already_sold</item>
+        <item>@string/problem_wrong_data</item>
+        <item>@string/problem_doublet</item>
+    </string-array>
+
+    <string-array name="notice_menu_items">
+        <item>@string/edit</item>
+        <item>@string/remove</item>
+        <item>@string/cancel</item>
+    </string-array>
+
+</resources>
